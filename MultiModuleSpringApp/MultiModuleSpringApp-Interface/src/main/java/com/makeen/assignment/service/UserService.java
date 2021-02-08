@@ -1,10 +1,10 @@
 package com.makeen.assignment.service;
 
-import com.makeen.assignment.model.UserDetails;
+import com.makeen.assignment.model.User;
 
 import java.util.List;
 
 public interface UserService {
 
-    List<UserDetails> getUsers();
+    List<User> getUsers();
 }
