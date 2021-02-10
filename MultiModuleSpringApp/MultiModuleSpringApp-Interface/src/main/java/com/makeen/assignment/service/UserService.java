@@ -1,10 +1,15 @@
 package com.makeen.assignment.service;
 
+import com.makeen.assignment.model.CreateUserRequest;
 import com.makeen.assignment.model.User;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
-
+@Service
 public interface UserService {
 
-    List<User> getUsers();
+    User getUser(Long id);
+
+    User create(CreateUserRequest request);
+
+    User updatePassword(Long userId, String newPassword);
 }
